@@ -1,0 +1,37 @@
+R1:
+sudo apt-get update
+sudo apt-get install build-essential linux-headers-$(uname -r)
+sudo apt-get install virtualbox-ose-guest-x11
+
+R2:
+The reboot command doesn’t work right away because, according to the manual page, it invokes the shutdown command which takes tie to make sure all users are logged off th machine and no processes are running. The the computer turns off and reboots.
+
+R3:
+I typed : 
+source candidate_presidentialness.sh 
+and the output was:
+R	Jeb Bush	 0
+R	Donald Trump	 2
+R	Ted Cruz	 0
+R	Marco Rubio	 4
+R	John Kasich	 0
+R	Ben Carson	 5
+D	Hillary Clinton	 5
+D	Bernie Sanders	 1
+
+R4:
+I changed the GREP_ARGS so that it included -i to make the search case insensitive.
+
+R5:
+The output of the new command was :
+R	Jeb Bush	 0
+R	Donald Trump	 4
+R	Ted Cruz	 1
+R	Marco Rubio	 8
+R	John Kasich	 1
+R	Ben Carson	 11
+D	Hillary Clinton	 6
+D	Bernie Sanders	 2
+
+R6:
+The command I used was: scp candidate_presidentialness.sh kbandoh@elnux.cs.umass.edu:/courses/cs100/cs197u/kbandoh
